@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Debt</title>
+</head>
+<body>
+   <header>
+    <nav>
+        <div class="logoname">
+            <img src="images.png" alt="photo" class="logo">
+            <h1>
+                MyDEBTS
+            </h1>
+        </div>
+        <div>
+            <ul class="links">
+                <li class="linkcont">Dashboard</li>
+                <li class="linkcont">About us</li>
+                <li class="linkcont">Contact us</li>
+            </ul>
+        </div>
+        <div class="hamburger" id="hamburger">
+            &#9776;
+        </div>
+    </nav>
+   </header> 
+
+   <div class="content">
+        
+   <div class="sidebarbar" id="sidebar">
+    <ul class="sidebar">
+        <li class="sidecont sidedash">Dashboard</li>
+        <li class="sidecont sideoutgoing">OutGoing</li>
+        <li class="sidecont sideincoming">Incoming</li>
+        <li class="sidecont sidealldebts">All Debts</li>
+        <li class="sidecont sidestakeholders">Stakeholders</li>
+        <li class="sidecont sideaboutus">About us</li>
+        <li class="sidecont sidecontactus">Contact us</li>
+    </ul>
+   </div>
+   <main>
+    <div class="dash">
+        <div class="cards incjs">
+            <p class="classheader">
+                Owed By You
+            </p>
+
+            <p class="secheader inc">
+                0 Br
+            </p>
+        </div>
+
+        <div class="cards outjs">
+            <p class="classheader">
+                Owed To You
+            </p>
+
+            <p class="secheader outc">
+                0 Br
+            </p>
+        </div>
+
+        <div class="cards ovcjs">
+            <p class="classheader">
+                All Records
+            </p>
+
+            <p class="secheader ovc">
+                0 Br
+            </p>
+        </div>
+
+        <div class="cards stkjs">
+            <p class="classheader">
+                Stakeholders
+            </p>
+
+        </div>
+
+        <div class="cards">
+            <p class="classheader">
+                Coming Soon
+            </p>
+        </div>
+   </div>
+   </div>
+   </main>
+   <dialog class="people-dialog">
+    <h2 class="dialog-title">Add Person</h2>
+    <form>
+        <div class="formcont">
+            <div class="formname">
+                <input type="text" id="name" name="name" placeholder="Name" required>
+            </div>
+
+            <div class="formdescription">
+                <textarea id="description" name="description" placeholder="Description" required></textarea>
+            </div>
+            <div class="formimg">
+                <input type="file" id="image" name="image" placeholder="Image" accept="image/*">
+            </div>
+
+            <div class="formbut">
+                <div class="but1">
+                    <button type="button" class="addbutsubmit">Submit</button>
+                </div>
+                <div class="but2">
+                    <button type="button" class="Canceladdbut">Cancel</button>
+                </div>
+            </div>
+
+        
+
+        </div>      
+    </form>
+  </dialog>
+
+  <dialog class="baddebts-dialog">
+    <h2>Add Debt</h2>
+    <form>
+      <div class="form-content">
+        <div class="form-amount">
+          <input type="number" id="amount" name="amount" placeholder="Amount" required>
+        </div>
+  
+        <div class="form-deadline">
+          <input type="date" id="deadline" name="deadline" placeholder="Deadline" required>
+        </div>
+  
+        <div class="form-person">
+          <select id="person" name="person" required>
+            <option value="">Select Person</option>
+            </select>
+        </div>
+  
+        <div class="form-buttons">
+          <button type="button" class="add-debt-submit">Submit</button>
+          <button type="button" class="cancel-add-debt">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog class="gooddebts-dialog">
+    <h2>Add Good Debt</h2>
+    <form>
+      <div class="form-content">
+        <div class="form-amount">
+          <input type="number" id="good-debt-amount" name="good-debt-amount" placeholder="Amount" required>
+        </div>
+  
+        <div class="form-deadline">
+          <input type="date" id="good-debt-deadline" name="good-debt-deadline" placeholder="Deadline" required>
+        </div>
+  
+        <div class="form-person">
+          <select id="person2" name="person2" required>
+            <option value="">Select Person</option>
+          </select>
+        </div>
+  
+        <div class="form-buttons">
+          <button type="button" class="add-good-debt-submit">Submit</button>
+          <button type="button" class="cancel-add-good-debt">Cancel</button>
+        </div>
+      </div>
+    </form>
+  </dialog>
+
+
+   
+<script src="script.js"></script>
+</body>
+</html>

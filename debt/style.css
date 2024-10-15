@@ -1,0 +1,449 @@
+body {
+  margin: 0px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+header {
+  background-color: #012030;
+  color: white;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+  margin-left: 30px;
+}
+
+.logoname {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+nav {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 45px;
+  gap: 8rem;
+  margin-right: 4rem;
+  transition: 0.5s;
+}
+
+.linkcont {
+  font-size: 20px;
+  font-weight: 900;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.linkcont:hover {
+  background-color: white;
+  color: #012030;
+  border-top-left-radius: 8px;
+  text-decoration: underline;
+  transform: scale(1.5);
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+}
+
+.sidebarbar {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+  box-shadow: 0px 10px 20px grey;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-top: 50px;
+  padding-left: 10px;
+}
+
+.sidecont {
+  font-size: 26px;
+  font-weight: 900;
+  display: inline-block;
+  border-left: 4px solid #012030;
+  margin: 0px;
+  padding: 5px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.sidecont:hover {
+  transform: scale(1.4);
+  margin-left: 40px;
+}
+
+.dash {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  padding: 100px;
+}
+
+.cards {
+  padding: 5px;
+  width: 240px;
+  height: 140px;
+  border: 1px solid grey;
+  border-radius: 24px;
+  box-shadow: 0px 10px 20px grey;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.cards:hover {
+  transform: scale(1.1);
+}
+
+.classheader {
+  font-size: 26px;
+  font-weight: 900;
+  color: #012030;
+}
+
+.secheader {
+  font-size: 45px;
+  font-weight: 900;
+  margin-top: -5px;
+  margin-left: 20px;
+}
+
+.inc {
+  color: red;
+}
+
+.outc {
+  color: green;
+}
+
+.ovc {
+  color: blue;
+}
+
+.photos {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.photos:hover {
+  transform: scale(1.5);
+}
+
+.people-dialog {
+  width: 380px;
+  height: 430px;
+  border: 1px solid grey;
+  border-radius: 24px;
+  box-shadow: 0px 10px 20px grey;
+  padding: 30px;
+}
+
+.dialog-title {
+  font-size: 32px;
+  font-weight: 900;
+  color: #012030;
+  text-align: center;
+}
+
+.formcont {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+#name,
+#description,
+#image {
+  width: 350px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 2px;
+}
+
+#description {
+  height: 100px;
+  padding-left: 10px;
+}
+
+#name,
+#image {
+  height: 40px;
+  padding-left: 10px;
+}
+
+.formbut {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+
+.addbutsubmit,
+.Canceladdbut {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: #012030;
+  border: 1px solid grey;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+input[type="file"]::file-selector-button {
+  height: 40px;
+  cursor: pointer;
+}
+
+.addbutsubmit:hover,
+.Canceladdbut:hover {
+  background-color: white;
+  color: #012030;
+  border: 1px solid #012030;
+}
+
+.baddebts-dialog,
+.gooddebts-dialog {
+  width: 380px;
+  height: 350px;
+  border: 1px solid grey;
+  border-radius: 24px;
+  box-shadow: 0px 10px 20px grey;
+  padding: 30px;
+}
+
+.form-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-amount input,
+.form-deadline input,
+.form-person select {
+  width: 350px;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 8px;
+  font-size: 18px;
+  padding: 2px;
+  padding-left: 10px;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+}
+
+.add-debt-submit,
+.cancel-add-debt,
+.add-good-debt-submit,
+.cancel-add-good-debt {
+  width: 100px;
+  height: 40px;
+  color: white;
+  background-color: #012030;
+  border: 1px solid grey;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.add-debt-submit:hover,
+.cancel-add-debt:hover,
+.add-good-debt-submit:hover,
+.cancel-add-good-debt:hover {
+  background-color: white;
+  color: #012030;
+  border: 1px solid #012030;
+}
+
+.hamburger {
+  display: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Responsive adjustments for mobile devices */
+@media (max-width: 768px) {
+  nav{
+    width: 100%;
+    height: 150px;
+  }
+  .links {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .sidebarbar {
+    display: none;
+    position: absolute;
+    top: 150px;
+    left: 0;
+    width: 50%;
+    background-color: #012030;
+    z-index: 1000;
+  }
+
+  .sidebar {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .sidecont {
+    padding: 15px;
+    color: white;
+  }
+
+  .dash {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+
+  .cards {
+    width: 70%;
+    margin-left: 20%;
+  }
+
+  .content {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+
+  .form-amount input,
+  .form-deadline input,
+  .form-person select,
+  #name,
+  #description,
+  #image {
+    width: 100%;
+  }
+
+  .people-dialog,
+  .baddebts-dialog,
+  .gooddebts-dialog {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .debts-title-bar,
+  .header-row,
+  .data-row {
+    flex-direction: column;
+    padding: 10px 20px;
+  }
+
+  .debts-box {
+    margin: 20px;
+    padding: 10px;
+  }
+
+  main{
+    width: 10%;
+  }
+
+  .box-box {
+    width: 100%;
+  
+    
+  }
+
+  .stakeholder-box {
+    width: 10%;
+    flex-direction: column;
+  }
+  .name-description{
+    width: 20%;
+  }
+
+}
+
+ /* styling for the stakeholders  */
+
+ .box-box {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #000;
+  margin: 70px;
+  padding: 30px;
+}
+
+.title-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px 50px;
+}
+
+.add-button {
+  width: 100px;
+  height: 50px;
+  border: 1px solid #000;
+  background-color: #012030;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 20px;
+  text-align: center;
+}
+
+.stakeholder-box {
+  width: 800px;
+  height: 80px;
+  border: 1px solid #000;
+  margin-top: 10px;
+  margin-left: 30px;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.name-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.stakeholder-name {
+  border: 1px solid #000;
+}
+
+.stakeholder-description {
+  border: 1px solid #000;
+  margin-top: -5px;
+}
+
+/* styling for the stakeholders  */
